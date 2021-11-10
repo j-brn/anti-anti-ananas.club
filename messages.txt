@@ -14,3 +14,9 @@ Ananas-Fans;haben einen IQ von mindestens 130
 Ananas-Fans;wissen was schmeckt
 Pizza Hawaii;ist köstlich
 Toast Hawaii;schmeckt jedem gut
+Ananas;passt zu jeder Speise
+Ananas;schmeckt zwei mal gut
+Ananas;ist gesund
+Ananas;wird von Kennern geschätzt
+Toast Hawaii;ist Nationalgericht in 195 Ländern
+Toast Hawaii am Morgen;vertreibt Kummer und Sorgen
