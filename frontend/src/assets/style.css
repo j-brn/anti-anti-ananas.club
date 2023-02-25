@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-pattern {
+    background: url(pattern.png);
+}
+
+.container {
+    clip-path: polygon(0% 0%, 130% 0%, 130% 100%, 0% 130%);
+}
+
+.fadeOne-enter-active, .fadeOne-leave-active {
+    transition: all .5s ease-out;
+}
+.fadeOne-enter, .fadeOne-leave-to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    transform: translate(0%, 100%);
+}
+
+.fadeTwo-enter-active, .fadeTwo-leave-active {
+    transition: all .5s ease-out;
+}
+.fadeTwo-enter, .fadeTwo-leave-to {
+    clip-path: polygon(0% 100%, 100% 100%, 0% 100%, 0% 100%);
+    transform: translate(0%, -100%);
+}
