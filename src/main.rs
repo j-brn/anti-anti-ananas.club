@@ -96,7 +96,7 @@ async fn main() -> anyhow::Result<()> {
                 .app_data(message_provider.clone())
                 .service(message_endpoint)
                 .service(index)
-                .service(actix_files::Files::new("/assets", "./assets"))
+                .service(actix_files::Files::new("/", "./assets"))
         }
     })
     .bind(&listen_address)
