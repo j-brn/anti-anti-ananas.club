@@ -1,3 +1,4 @@
+use actix_cors::Cors;
 use actix_files::NamedFile;
 use actix_web::{
     get,
@@ -14,7 +15,6 @@ use std::io::{BufRead, BufReader};
 use std::path::Path;
 use std::str::FromStr;
 use std::sync::Arc;
-use actix_cors::Cors;
 
 #[derive(Debug, Clone)]
 struct MessageProvider {
