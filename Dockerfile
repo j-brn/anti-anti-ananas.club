@@ -19,7 +19,7 @@ RUN npm ci
 COPY frontend/ ./
 RUN npm run build
 
-FROM base AS runtime
+FROM debian:stable-slim AS runtime
 WORKDIR /app
 
 COPY --from=builder /app/target/release/anti-anti-ananas /usr/local/bin
