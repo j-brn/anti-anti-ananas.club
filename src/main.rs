@@ -14,6 +14,7 @@ use std::io::{BufRead, BufReader};
 use std::path::Path;
 use std::str::FromStr;
 use std::sync::Arc;
+use actix_cors::Cors;
 
 #[derive(Debug, Clone)]
 struct MessageProvider {
@@ -91,6 +92,7 @@ async fn main() -> anyhow::Result<()> {
             App::new()
                 .wrap(Compress::default())
                 .wrap(NormalizePath::default())
+                .wrap(Cors::permissive())
                 .app_data(message_provider.clone())
                 .service(message_endpoint)
                 .service(index)
