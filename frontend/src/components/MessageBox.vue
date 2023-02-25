@@ -1,6 +1,5 @@
 <template>
   <div>
-    <button @click="show = !show"> Click</button>
     <div
         class="w-screen lg:w-screen-80 h-[260px] lg:h-[450px] overflow-hidden bg-black rounded-2xl px-16 py-8 bg-opacity-95 shadow-xl text-center flex flex-col justify-center items-center"
     >
