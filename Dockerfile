@@ -1,6 +1,3 @@
-FROM debian:stable-slim AS base
-WORKDIR /app
-
 FROM lukemathwalker/cargo-chef AS planner
 WORKDIR /app
 COPY . .
