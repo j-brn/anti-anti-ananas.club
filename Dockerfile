@@ -1,12 +1,10 @@
-FROM rust:latest AS chef
-RUN cargo install cargo-chef
+FROM lukemathwalker/cargo-chef AS planner
 WORKDIR app
-
-FROM chef AS planner
 COPY . .
 RUN cargo chef prepare --recipe-path recipe.json
 
-FROM chef AS builder
+FROM lukemathwalker/cargo-chef AS builder
+WORKDIR app
 COPY --from=planner /app/recipe.json recipe.json
 RUN cargo chef cook --release --recipe-path recipe.json
 COPY . .
