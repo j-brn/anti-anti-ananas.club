@@ -812,11 +812,11 @@ checksum = "ac74c624d6b2d21f425f752262f42188365d7b8ff1aff74c82e45136510a4857"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.28"
+version = "1.0.55"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c7ed8b8c7b886ea3ed7dde405212185f423ab44682667c8c6dd14aa1d9f6612"
+checksum = "1d0dd4be24fcdcfeaa12a432d588dc59bbad6cad3510c67e74a2b6b2fc950564"
 dependencies = [
- "unicode-xid",
+ "unicode-ident",
 ]
 
 [[package]]
@@ -935,18 +935,18 @@ dependencies = [
 
 [[package]]
 name = "serde"
-version = "1.0.127"
+version = "1.0.156"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f03b9878abf6d14e6779d3f24f07b2cfa90352cfec4acc5aab8f1ac7f146fae8"
+checksum = "314b5b092c0ade17c00142951e50ced110ec27cea304b1037c6969246c2469a4"
 dependencies = [
  "serde_derive",
 ]
 
 [[package]]
 name = "serde_derive"
-version = "1.0.127"
+version = "1.0.156"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a024926d3432516606328597e0f224a51355a493b49fdd67e9209187cbe55ecc"
+checksum = "d7e29c4601e36bcec74a223228dce795f4cd3616341a4af93520ca1a837c087d"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1020,13 +1020,13 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "1.0.74"
+version = "1.0.109"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1873d832550d4588c3dbc20f01361ab00bfe741048f71e3fecf145a7cc18b29c"
+checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
 dependencies = [
  "proc-macro2",
  "quote",
- "unicode-xid",
+ "unicode-ident",
 ]
 
 [[package]]
@@ -1152,6 +1152,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "246f4c42e67e7a4e3c6106ff716a5d067d4132a642840b242e357e468a2a0085"
 
 [[package]]
+name = "unicode-ident"
+version = "1.0.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e5464a87b239f13a63a501f2701565754bae92d243d4bb7eb12f6d57d2269bf4"
+
+[[package]]
 name = "unicode-normalization"
 version = "0.1.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1159,12 +1165,6 @@ checksum = "d54590932941a9e9266f0832deed84ebe1bf2e4c9e4a3554d393d18f5e854bf9"
 dependencies = [
  "tinyvec",
 ]
-
-[[package]]
-name = "unicode-xid"
-version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ccb82d61f80a663efe1f787a51b16b5a51e3314d6ac365b08639f52387b33f3"
 
 [[package]]
 name = "url"
